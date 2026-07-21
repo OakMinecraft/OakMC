@@ -6,8 +6,6 @@ OakMC 是一款专为小游戏打造的高性能服务端。
 
 > 当前 OakMC 文档专为 0.0.1 版本编写。实际可用版本请以你拿到的发布包或构建产物说明为准。
 
----
-
 ## 1. 你会用到什么
 
 一个可运行的 OakMC 服务端通常包含：
@@ -30,7 +28,7 @@ OakMC 可以通过两种方式启动和管理。日常使用建议选择 OakMana
 ### 方式一：使用 OakManager（推荐）
 
 建议使用 OakManager 创建和管理 OakMC 服务器。通过 OakManager 管理时，你通常不需要手动维护每个实例的工作目录，也不需要直接操作启动命令；服务器启动、停止、配置调整、日志查看和实例管理都应优先在 OakManager 中完成。
-
+![OakManager_snapshot](/archive/oak_manager_snapshot.png "本地图片标题")
 使用 OakManager 时，请在管理界面中创建 OakMC 服务器，并按界面提示选择服务端程序、工作目录、端口和最大玩家数等参数。创建完成后，从 OakManager 启动服务器，再按下文的连接测试方式进入游戏验证。
 
 ### 方式二：直接运行 mcserver
@@ -138,7 +136,7 @@ OakMC 的主要配置文件是 `server.properties`。首次启动后如果文件
 ## 5. 常用控制台命令
 
 这些命令可以在服务端控制台执行。部分命令也可以由有权限的玩家在游戏内执行。更完整的
-参数说明和示例见 [docs/command-examples.md](docs/command-examples.md)。
+参数说明和示例见 [命令示例](/docs/command-examples)。
 
 ### 基础管理
 
@@ -190,7 +188,7 @@ stop
 
 这比直接关闭窗口或强制结束进程更安全。
 
-更多命令示例见 [docs/command-examples.md](docs/command-examples.md)。
+更多命令示例见 [命令示例](/docs/command-examples)。
 
 ## 6. 世界切换
 
@@ -245,8 +243,8 @@ return {
 reload-lua
 ```
 
-插件开发快速上手见 [docs/plugin-development-zh.md](docs/plugin-development-zh.md)。完整 Lua API
-见 [docs/lua-api-reference-zh.md](docs/lua-api-reference-zh.md)。英文版见 [docs/lua-api-reference.md](docs/lua-api-reference.md)。
+插件开发快速上手见 [插件开发](/docs/plugin-development-zh)。完整 Lua API
+见 [Lua API 参考](/docs/lua-api-reference-zh)。英文版见 [English Lua API reference](/docs/lua-api-reference)。
 
 ## 8. 跨服签名指令
 
@@ -277,7 +275,7 @@ allowed-commands=say,list,weather
 
 不要把明文密钥写进命令行历史或公开日志。
 
-详细说明见 [docs/server-operations-zh.md](docs/server-operations-zh.md)。
+详细说明见 [服务器运维](/docs/server-operations-zh)。
 
 ## 9. Admin HTTP API
 
@@ -292,7 +290,7 @@ OakMC 会自动创建 `admin.properties`，但 Admin HTTP API 默认关闭。
 - 优先绑定到 `127.0.0.1` 或内网地址。
 - 配合反向代理、访问控制或 VPN 使用。
 
-详细配置见 [docs/server-operations-zh.md](docs/server-operations-zh.md)。
+详细配置见 [服务器运维](/docs/server-operations-zh)。
 
 ## 10. 日常维护建议
 
@@ -365,12 +363,12 @@ banned-ips.json
 
 | 文档 | 内容 |
 | --- | --- |
-| [docs/server-operations-zh.md](docs/server-operations-zh.md) | 中文运维说明、启动参数、配置、reload、远程指令、Admin API |
-| [docs/server-operations.md](docs/server-operations.md) | English operations guide |
-| [docs/command-examples.md](docs/command-examples.md) | 控制台命令、物品、实体、方块、天气、声音等示例 |
-| [docs/plugin-development-zh.md](docs/plugin-development-zh.md) | 中文 Lua 插件开发快速上手 |
-| [docs/lua-api-reference-zh.md](docs/lua-api-reference-zh.md) | 中文 Lua API 参考 |
-| [docs/lua-api-reference.md](docs/lua-api-reference.md) | English Lua API reference |
+| [服务器运维](/docs/server-operations-zh) | 中文运维说明、启动参数、配置、reload、远程指令、Admin API |
+| [Operations guide](/docs/server-operations) | English operations guide |
+| [命令示例](/docs/command-examples) | 控制台命令、物品、实体、方块、天气、声音等示例 |
+| [插件开发](/docs/plugin-development-zh) | 中文 Lua 插件开发快速上手 |
+| [Lua API 参考](/docs/lua-api-reference-zh) | 中文 Lua API 参考 |
+| [English Lua API reference](/docs/lua-api-reference) | English Lua API reference |
 
 ## 13. 反馈问题时请提供
 
